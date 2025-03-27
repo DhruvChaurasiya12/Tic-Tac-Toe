@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="game-page" class="display-flex">
+        <div id="header-box" class="display-flex">
+            <div>
+                <span class="X color-type3">X</span>
+                <span class="O color-type2">O</span>
+            </div>
+            <div class="color-type4 color-type5 display-flex border-radius" id="turn">Start!</div>
+            <button id="reset-button" class="color-type1 display-flex border-radius">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+        <div id="game" class="display-flex">
+            <button class="box color-type5 color-type4" id="1"></button>
+            <button class="box color-type5 color-type4" id="2"></button>
+            <button class="box color-type5 color-type4" id="3"></button>
+            <button class="box color-type5 color-type4" id="4"></button>
+            <button class="box color-type5 color-type4" id="5"></button>
+            <button class="box color-type5 color-type4" id="6"></button>
+            <button class="box color-type5 color-type4" id="7"></button>
+            <button class="box color-type5 color-type4" id="8"></button>
+            <button class="box color-type5 color-type4" id="9"></button>
+        </div>
+
+        <div id="result" class="display-flex">
+            <div id="user-wins" class="result-box display-flex">
+                <div class="score-owner">X(YOU)</div>
+                <div class="score" id="user-score">0</div>
+            </div>
+            <div id="tie" class="result-box display-flex">
+                <div class="score-owner">TIES</div>
+                <div class="score" id="tie-score">0</div>
+            </div>
+            <div id="comp-wins" class="result-box display-flex">
+                <div class="score-owner">O(CPU)</div>
+                <div class="score" id="comp-score">0</div>
+            </div>
+        </div>
+        <button id="restart"><a href="index.html">Return to main menu</a></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
